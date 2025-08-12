@@ -11,6 +11,6 @@ def exibir_mensagem():
 #programa principal
 app=QtWidgets.QApplication([])
 janela=uic.loadUi("janelauntitled.ui")
-janela.pushButton.clicked.connect(exibir_mensagem)
+janela.PushButton.clicked.connect(exibir_mensagem)
 janela.show()
 app.exec()

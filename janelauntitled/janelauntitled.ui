@@ -233,7 +233,7 @@ border-width: 1px;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../Downloads/gremioanjo.jpg</pixmap>
+      <pixmap>gremioanjo.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
@@ -274,3 +274,4 @@ border-width: 1px;</string>
  <resources/>
  <connections/>
 </ui>
+

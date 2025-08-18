@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>564</width>
-    <height>693</height>
+    <width>417</width>
+    <height>898</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -32,22 +32,22 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>60</y>
-      <width>491</width>
-      <height>561</height>
+      <x>20</x>
+      <y>10</y>
+      <width>381</width>
+      <height>861</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:rgb(0, 170, 255)</string>
     </property>
     <property name="title">
-     <string>GroupBox</string>
+     <string>gremio ganhou e o santos perdeu pqp</string>
     </property>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="leNome">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>140</x>
        <y>50</y>
        <width>171</width>
        <height>31</height>
@@ -61,9 +61,9 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
     <widget class="QPushButton" name="btfechar">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>490</y>
-       <width>131</width>
+       <x>220</x>
+       <y>630</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
@@ -78,9 +78,9 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
     <widget class="QLabel" name="labelnome">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>60</x>
        <y>50</y>
-       <width>161</width>
+       <width>71</width>
        <height>31</height>
       </rect>
      </property>
@@ -97,32 +97,32 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
       <string notr="true"/>
      </property>
      <property name="text">
-      <string> Digite seu nome:</string>
+      <string>Nome:</string>
      </property>
     </widget>
     <widget class="QPushButton" name="PushButton">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>490</y>
-       <width>131</width>
+       <x>60</x>
+       <y>630</y>
+       <width>31</width>
        <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 85, 255); border-radius: 15px; border-style: outset; border-width: 2px;
+      <string notr="true">background-color: rgb(208, 208, 208); border-radius: 15px; border-style: outset; border-width: 2px;
 </string>
      </property>
      <property name="text">
-      <string>Verificar</string>
+      <string>?</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btexcluir">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>110</y>
-       <width>131</width>
+       <x>200</x>
+       <y>300</y>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -137,9 +137,9 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
     <widget class="QPushButton" name="btadicionar">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>110</y>
-       <width>131</width>
+       <x>60</x>
+       <y>300</y>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -154,9 +154,9 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
     <widget class="QPushButton" name="btordenar">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>410</y>
-       <width>131</width>
+       <x>220</x>
+       <y>590</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
@@ -168,11 +168,11 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
       <string>Ordenar</string>
      </property>
     </widget>
-    <widget class="QLabel" name="labelnome_2">
+    <widget class="QLabel" name="leconta">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>410</y>
+       <x>60</x>
+       <y>590</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -196,9 +196,9 @@ border-width: 1px;border-color:rgb(255, 255, 255)</string>
     <widget class="QListWidget" name="lista">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>160</y>
-       <width>351</width>
+       <x>60</x>
+       <y>350</y>
+       <width>251</width>
        <height>231</height>
       </rect>
      </property>
@@ -210,13 +210,163 @@ border-width: 1px;</string>
       <enum>Qt::ScrollBarAlwaysOn</enum>
      </property>
     </widget>
+    <widget class="QLineEdit" name="leIdade">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>110</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255); border-radius: 15px; border-style: outset;  
+border-width: 1px;border-color:rgb(255, 255, 255)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelnome_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Symbol</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Idade:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbnivel">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>240</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255); border-radius: 15px; border-style: outset;  
+border-width: 1px;border-color:rgb(255, 255, 255)</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Fundamental</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Médio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Superior</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Pós-Graduação</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mestrado</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Doutorado</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="labelnome_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>240</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Symbol</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Escolaridade:</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>170</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(170, 255, 255)</string>
+     </property>
+     <property name="title">
+      <string>Sexo:</string>
+     </property>
+     <widget class="QRadioButton" name="rb2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Masculino</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="rb1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Feminino</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
-       <width>471</width>
-       <height>531</height>
+       <y>650</y>
+       <width>361</width>
+       <height>201</height>
       </rect>
      </property>
      <property name="maximumSize">
@@ -243,15 +393,20 @@ border-width: 1px;</string>
      </property>
     </widget>
     <zorder>label</zorder>
-    <zorder>lineEdit</zorder>
+    <zorder>leNome</zorder>
     <zorder>btfechar</zorder>
     <zorder>labelnome</zorder>
     <zorder>PushButton</zorder>
     <zorder>btexcluir</zorder>
     <zorder>btadicionar</zorder>
     <zorder>btordenar</zorder>
-    <zorder>labelnome_2</zorder>
+    <zorder>leconta</zorder>
     <zorder>lista</zorder>
+    <zorder>leIdade</zorder>
+    <zorder>labelnome_3</zorder>
+    <zorder>cbnivel</zorder>
+    <zorder>labelnome_4</zorder>
+    <zorder>groupBox_2</zorder>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -259,7 +414,7 @@ border-width: 1px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>564</width>
+     <width>417</width>
      <height>21</height>
     </rect>
    </property>
@@ -274,4 +429,3 @@ border-width: 1px;</string>
  <resources/>
  <connections/>
 </ui>
-

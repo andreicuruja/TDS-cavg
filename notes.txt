@@ -1,1 +1,48 @@
 12/08/2025 - apresentaçao objetiva REDES, 5 cabos: RJ45, cabo coaxial? 
+18/08/2025 - exercicios em kotlin, do 3 em diante pq faltei
+exc 3:
+fun main() {
+    println("Digite sua idade:")
+    val idade = readln().toInt()
+    if (idade < 18) {
+    println("Menor de idade.")
+} else {
+    println("Maior de idade.")
+}
+}
+exc 4:
+fun main() {
+  println("Me dê a nota em uma escala de 0 a 10")
+  val nota = readLine()?.toInt()
+  if (nota != null ## nota in 0..10) {
+    when (nota) {
+        in 10 -> println("Excelente")
+        in 7..9 -> println("Bom")
+        in 5..6 -> println("Regular")
+        in 0..4 -> println("Precisa Melhorar")
+    }
+{ else }
+  println("Nota invalida, digite um valor entre 0 e 10 novamente.")
+}}
+exc 5 eu acho:
+fun main() {
+  println("Quantos alunos estão na sala? ")
+  val quantidade = readLine()?.toIntOrNull()
+  if (quantidade != null && quantidade > 0){
+      var somaNotas = 0.0
+      for (i in 1..quantidade){
+          print("Digite a nota do aluno $i: ")
+          val nota= readLine ()?.toDoubleOrNull()
+          if (nota != null && nota in 0.0..10.0){
+              somaNotas += nota
+              } else {
+                printIn("Nota invalida. Considerando 0.")  
+              }
+          }
+          val media =somaNotas / quantidade
+          printIn("A média da turma é: %.2f".format(media))
+          
+        
+      }
+  }
+}

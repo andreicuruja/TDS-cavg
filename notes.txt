@@ -1,5 +1,35 @@
 12/08/2025 - apresentaçao objetiva REDES, 5 cabos: RJ45, cabo coaxial? 
 18/08/2025 - exercicios em kotlin, do 3 em diante pq faltei
+exc 1:
+fun main() {
+    val altura: Double = 1.75
+    val peso: Float = 68.5f
+    val inicial: Char = 'M'
+    val gostadekotlin: Boolean = true
+
+    println("Altura: $altura metros")
+    println("Peso: $peso kg")
+    println("Inicial do nome: $inicial")
+    println("Gosta de programação? $gostadekotlin")
+}
+exc 2:
+fun main() {
+    print("Digite o primeiro número: ")
+    val num1 = readLine()!!.toInt()
+
+    print("Digite o segundo número: ")
+    val num2 = readLine()!!.toInt()
+
+    val soma = num1 + num2
+    val subtracao = num1 - num2
+    val multiplicacao = num1 * num2
+    val divisao = num1 / num2
+
+    println("Soma: $soma")
+    println("Subtracao: $subtracao")
+    println("Multiplicacao: $multiplicacao")
+    println("Divisao: $divisao")
+}
 exc 3:
 fun main() {
     println("Digite sua idade:")
@@ -26,23 +56,27 @@ fun main() {
 }}
 exc 5 eu acho:
 fun main() {
-  println("Quantos alunos estão na sala? ")
-  val quantidade = readLine()?.toIntOrNull()
-  if (quantidade != null && quantidade > 0){
-      var somaNotas = 0.0
-      for (i in 1..quantidade){
-          print("Digite a nota do aluno $i: ")
-          val nota= readLine ()?.toDoubleOrNull()
-          if (nota != null && nota in 0.0..10.0){
-              somaNotas += nota
-              } else {
-                printIn("Nota invalida. Considerando 0.")  
-              }
-          }
-          val media =somaNotas / quantidade
-          printIn("A média da turma é: %.2f".format(media))
-          
-        
-      }
-  }
+    print("Quantos alunos há na sala? ")
+    val quantidade = readLine()?.toIntOrNull()
+
+    if (quantidade != null && quantidade > 0) {
+        var somaNotas = 0.0
+
+        for (i in 1..quantidade) {
+            print("Digite a nota do aluno $i: ")
+            val nota = readLine()?.toDoubleOrNull()
+
+            if (nota != null && nota in 0.0..10.0) {
+                somaNotas += nota
+            } else {
+                println("Nota invalida. Considerando 0.")
+            }
+        }
+
+        val media = somaNotas / quantidade
+        println("A media da turma é: %.2f".format(media))
+    } else {
+        println("Quantidade invalida de alunos.")
+    }
+}
 }

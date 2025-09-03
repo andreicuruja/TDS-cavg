@@ -1,2 +1,2 @@
-# INSTITUTO FEDERAL SUL RIO-GRANDENSE Campus Pelotas Visconde da Graça
-Repositório respectivamente criado à respeito sobre Linguagem de Programação 2 - 2025/1
+# Linguagem de Programação 2
+Branch dedicada ao terceiro semestre do CTDS de 2025

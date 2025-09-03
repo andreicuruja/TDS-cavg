@@ -1,2 +1,2 @@
 # INSTITUTO FEDERAL SUL RIO-GRANDENSE Campus Pelotas Visconde da Graça
-Repositório respectivamente à respeito sobre Linguagem de Programação 2 - 2025/1
+Repositório respectivamente criado à respeito sobre Linguagem de Programação 2 - 2025/1

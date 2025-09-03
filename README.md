@@ -1,2 +1,2 @@
-# INSTITUTO FEDERAL SUL RIO-GRANDENSE Campus Pelotas Visconde da Graça
-Repositório pessoal de exercícios e projetos
+# Linguagem de Programação 1
+Branch dedicada ao primeiro semestre do CTDS de 2024

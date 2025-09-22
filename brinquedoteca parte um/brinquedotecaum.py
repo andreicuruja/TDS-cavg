@@ -35,10 +35,11 @@ def sair():
         janela.close()
 
 app = QtWidgets.QApplication(sys.argv)
-janela = uic.loadUi("brinquedoteca.ui")
+janela = uic.loadUi("brinquedotecaum.ui")
 janela.btn_adicionar.clicked.connect(addCrianca)
 janela.btn_listar.clicked.connect(listarTodos)
 janela.btn_limpar.clicked.connect(limparLista)
 janela.btn_fechar.clicked.connect(sair)
 janela.show()
+
 sys.exit(app.exec_())

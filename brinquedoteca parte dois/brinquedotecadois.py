@@ -21,7 +21,7 @@ def adicionar_crianca():
     janela.le_nome.clear()
     janela.sp_idade.setValue(0)
     janela.le_nome.setFocus()
-   # listar_todos()
+   # listar_todos() 
 
 def listar_todos():
     janela.lista.clear()
@@ -100,3 +100,4 @@ listar_todos()
 janela.show()
 
 sys.exit(app.exec_())
+

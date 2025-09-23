@@ -156,7 +156,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>brinquedoteca parte um/1e9fa386304c70f0532785a2f4baa235.jpg</pixmap>
+     <pixmap>1e9fa386304c70f0532785a2f4baa235.jpg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -222,3 +222,4 @@
  <resources/>
  <connections/>
 </ui>
+

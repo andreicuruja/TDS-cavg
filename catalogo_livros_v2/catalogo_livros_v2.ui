@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cátalogo de Livros</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="gbSingle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>451</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(240, 240, 240);border:1px solid blue;</string>
+    </property>
+    <property name="title">
+     <string>Livro</string>
+    </property>
+    <widget class="QLabel" name="lbTitulo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>31</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px</string>
+     </property>
+     <property name="text">
+      <string>Título:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbAutor">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px</string>
+     </property>
+     <property name="text">
+      <string>Autor:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbAno">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px</string>
+     </property>
+     <property name="text">
+      <string>Ano:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leTitulo">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>361</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);
+border:1px solid grey</string>
+     </property>
+     <property name="placeholderText">
+      <string>Título do livro</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leAutor">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>361</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);
+border:1px solid grey</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Nome do Autor</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="leAno">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);
+border:1px solid grey</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string>Ex: 2024</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnAdicionar">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 203, 16);border:0px;color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Adicionar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnLimpar">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>120</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:#6c999d;
+border:0px;
+color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Limpar</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbGen">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>60</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);
+border:1px solid grey</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Ficção</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Romance</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Suspense</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sci-fi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Fantasia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Religioso</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Biografia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Autoajuda</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Poesia</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Contos</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="lbGen">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>60</y>
+       <width>71</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px</string>
+     </property>
+     <property name="text">
+      <string>Gênero:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbFormato">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px</string>
+     </property>
+     <property name="text">
+      <string>Formato:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbFisico">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>90</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;</string>
+     </property>
+     <property name="text">
+      <string>Físico</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbDigital">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>90</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;
+</string>
+     </property>
+     <property name="text">
+      <string>Digital</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="buscarpornome">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>90</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 255, 255);
+border:0px</string>
+     </property>
+     <property name="placeholderText">
+      <string>Buscar por nome...</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="rbAudiobook">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>90</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:0px;
+</string>
+     </property>
+     <property name="text">
+      <string>Audiobook</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>451</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(240, 240, 240);border:1px solid blue;</string>
+    </property>
+    <property name="title">
+     <string>Catálogo</string>
+    </property>
+    <widget class="QTableWidget" name="livrosTabela">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>431</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255,255,255);border:1px solid grey;</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>Título</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Autor</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Ano</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Gênero</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Formato</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btnRemover">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(255, 0, 0);border:0px;color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Remover Selecionado</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSair">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>180</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(170, 85, 0);border:0px;color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Sair</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMostrar">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>180</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(0, 85, 255);
+border:0px;
+color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>Mostrar</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>472</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
